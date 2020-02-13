@@ -1,7 +1,68 @@
-## CATATAN SOURCE CODE
+## CATATAN SOURCE CODE COLECTIONS AND LINKEDLIST
 
 **Implementasi Collections Java**
+```java
+//Menggunakan HashMap
+package com.enigmacamp.collections;
+import java.util.*;
 
+public class Application  {
+    public static void main(String[] args) throws Throwable {
+
+    
+    Map<String,String> map1 = new HashMap<>();    
+    map1.put("DAD","DAD");
+    map1.put("adas","ada");
+    map1.put("ada","asda");
+    map1.put("asda","asda");
+    map1.put("ASdas","ASdas");
+    
+    Map<String,String> map2 = new TreeMap<>(map1);
+    Map<String,String> map3 = new LinkedHashMap<>(map1);
+    
+    
+        System.out.println(map1);
+        System.out.println(map1);
+        System.out.println(map1);
+    }
+}
+ ```
+
+
+```java
+//Menggunakan Has dan Set
+package com.enigmacamp.collections;
+import java.util.*;
+
+public class Application  {
+    public static boolean test(Integer e){
+        return e % 2 != 0;
+    }
+    public static void main(String[] args) throws Throwable {
+        
+    List<Integer> anotherList = new ArrayList<>();
+    anotherList.add(1);
+    anotherList.add(2);
+    anotherList.add(3);
+   
+    
+    List<Integer> list = new ArrayList<>();    
+    list.add(1);
+    list.add(2);
+    list.add(3);
+    list.add(4);
+    list.add(5);
+    
+    Set<Integer> set1 = new HashSet<>(list);
+    Set<Integer> set2 = new TreeSet<>(list);
+    Set<Integer> set3 = new LinkedHashSet(list);
+    
+        System.out.println(set1);
+        System.out.println(set2);
+        System.out.println(set3);
+    }
+}
+```
 
 ```java
 //mengunakan for dan iterator
