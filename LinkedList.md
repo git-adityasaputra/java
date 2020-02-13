@@ -1,6 +1,68 @@
 ## CATATAN SOURCE CODE COLECTIONS AND LINKEDLIST
 
 **Implementasi Collections Java**
+```JAVA
+//File/Class 1
+package com.enigmacamp.collections;
+import java.util.*;
+
+public class Application  {
+    public static void main(String[] args) throws Throwable {
+        List<Box> list = new ArrayList<>();
+        
+        list.add(new Box(2));
+        list.add(new Box(1));
+        list.add(new Box(4));
+        list.add(new Box(5));
+        list.add(new Box(3));
+        
+        Collections.sort(list);               
+    }
+}
+
+//File ke 2 atau Claas ke 2
+
+package com.enigmacamp.collections;
+
+public class Box<T>  implements Comparable<Box>{
+    private int capacity;
+    private T item;
+    
+    public Box (int capacity){
+        this.capacity = capacity;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public T getItem() {
+        return item;
+    }
+
+    public void setItem(T item) {
+        this.item = item;
+    }
+    
+    @Override
+    public String toString(){
+        return "Box{" + "capacity = " + capacity + ", item" + item + ")";
+    }
+    
+    @Override
+    public int compareTo(Box o){
+        return Integer.compare(capacity, o.getCapacity());
+    }
+    
+    
+    
+}
+```
+
 ```java
 //Menggunakan HashMap
 package com.enigmacamp.collections;
