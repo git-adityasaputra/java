@@ -11,11 +11,11 @@ public class Application  {
 
     
     Map<String,String> map1 = new HashMap<>();    
-    map1.put("DAD","DAD");
-    map1.put("adas","ada");
-    map1.put("ada","asda");
-    map1.put("asda","asda");
-    map1.put("ASdas","ASdas");
+    map1.put("abc","abc");
+    map1.put("def","def");
+    map1.put("ghi","ghi");
+    map1.put("jkl","jkl");
+    map1.put("mn","mn");
     
     Map<String,String> map2 = new TreeMap<>(map1);
     Map<String,String> map3 = new LinkedHashMap<>(map1);
